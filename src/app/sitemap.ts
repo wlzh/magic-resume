@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://magicv.art/";
+  const baseUrl = "https://jianli.869hr.uk/";
 
   const routes = ["zh", "en"];
 
