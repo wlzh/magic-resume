@@ -104,4 +104,4 @@ export const DEFAULT_TEMPLATES: ResumeTemplate[] = [
   },
 ];
 
-export const GITHUB_REPO_URL = "https://github.com/wlzh/";
+export const GITHUB_REPO_URL = "https://github.com/JOYCEQL/magic-resume";

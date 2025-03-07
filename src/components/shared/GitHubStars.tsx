@@ -4,8 +4,8 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const REPO_URL = "https://github.com/wlzh";
-const API_URL = "https://api.github.com/wlzh";
+const REPO_URL = "https://github.com/JOYCEQL/magic-resume";
+const API_URL = "https://api.github.com/repos/JOYCEQL/magic-resume";
 
 export function GitHubStars() {
   const [stars, setStars] = useState<number | null>(null);

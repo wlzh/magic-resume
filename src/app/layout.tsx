@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jianli.869hr.uk"),
+  metadataBase: new URL("https://magicv.art"),
   robots: {
     index: true,
     follow: true,

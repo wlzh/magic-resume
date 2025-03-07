@@ -1,5 +1,0 @@
-# Ads.txt file for 869hr.uk
-# Last updated: 2025-02-08
-
-# Google AdSense
-google.com, pub-2634092855285462, DIRECT, f08c47fec0942fa0
