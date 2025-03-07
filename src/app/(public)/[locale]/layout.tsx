@@ -42,6 +42,12 @@ export async function generateMetadata({
       description: t("description"),
       locale: locale,
       alternateLocale: locale === "en" ? ["zh"] : ["en"]
+    },
+    verification: {
+      google: "ca-pub-2634092855285462"
+    },
+    other: {
+      "google-adsense-account": "ca-pub-2634092855285462"
     }
   };
 }
