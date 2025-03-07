@@ -1,5 +1,8 @@
+# robots.txt for jianli.869hr.uk
 User-agent: *
 Allow: /
-
-# Sitemap
 Sitemap: https://jianli.869hr.uk/sitemap.xml
+
+# 允许所有搜索引擎爬取
+User-agent: *
+Disallow:
