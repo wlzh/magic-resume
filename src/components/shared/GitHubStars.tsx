@@ -34,7 +34,8 @@ export function GitHubStars() {
         "hover:border-border/80 dark:hover:border-white/40",
         "shadow-sm hover:shadow-md",
         "cursor-pointer select-none",
-        "group overflow-hidden"
+        "group overflow-hidden",
+        "hidden"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
