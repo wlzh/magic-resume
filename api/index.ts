@@ -1,8 +1,5 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { createServer } from "node:http";
 import { createReadStream, existsSync, statSync } from "node:fs";
-import { extname, normalize, resolve, join } from "node:path";
-import { Readable } from "node:stream";
+import { extname, normalize, resolve } from "node:path";
 
 const clientDir = resolve(process.cwd(), "dist/client");
 
@@ -59,7 +56,7 @@ function toHeaders(nodeHeaders: Record<string, string | string[] | undefined>) {
   return headers;
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: any, res: any) {
   try {
     const hostHeader = req.headers.host || "localhost:3000";
     const protocol = (req.headers["x-forwarded-proto"] || "https").toString().split(",")[0].trim();
@@ -100,7 +97,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const response = await serverEntry.fetch(request);
 
     res.statusCode = response.status;
-    response.headers.forEach((value, key) => {
+    response.headers.forEach((value: string, key: string) => {
       if (key.toLowerCase() === "set-cookie") {
         const existing = res.getHeader("set-cookie");
         if (Array.isArray(existing)) {
@@ -121,15 +118,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const reader = response.body.getReader();
-    const pump = async () => {
-      for (;;) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        res.write(value);
-      }
-      res.end();
-    };
-    await pump();
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      res.write(value);
+    }
+    res.end();
   } catch (error) {
     console.error("Server error:", error);
     if (!res.headersSent) {
