@@ -1,11 +1,9 @@
 {
-  "version": 2,
   "buildCommand": "pnpm build",
   "installCommand": "pnpm install",
   "outputDirectory": "dist/client",
   "functions": {
     "api/index.ts": {
-      "runtime": "nodejs20.x",
       "maxDuration": 30
     }
   },
