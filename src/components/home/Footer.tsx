@@ -1,6 +1,6 @@
 import { useTranslations } from "@/i18n/compat/client";
 import Logo from "@/components/shared/Logo";
-import { Youtube, Twitter, Globe, BookOpen, Send } from "lucide-react";
+import { Youtube, Twitter, Globe, BookOpen, Send, MessageCircle } from "lucide-react";
 
 const SOCIAL_LINKS = [
   {
@@ -27,6 +27,11 @@ const SOCIAL_LINKS = [
     label: "Telegram",
     href: "https://t.me/tgmShareAI",
     icon: Send,
+  },
+  {
+    label: "微信群",
+    href: "https://qr.869hr.uk/aitech",
+    icon: MessageCircle,
   },
 ];
 

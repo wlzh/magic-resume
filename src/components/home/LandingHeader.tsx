@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { usePathname } from "@/lib/navigation";
 import { useTranslations } from "@/i18n/compat/client";
-import { Menu, Moon, Sun, X, Youtube, Twitter, Globe, BookOpen, Send } from "lucide-react";
+import { Menu, Moon, Sun, X, Youtube, Twitter, Globe, BookOpen, Send, MessageCircle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/shared/Logo";
@@ -19,6 +19,7 @@ const SOCIAL_LINKS = [
   { label: "博客", href: "https://869hr.uk", icon: Globe },
   { label: "大坝资源站", href: "https://doc.869hr.uk", icon: BookOpen },
   { label: "Telegram", href: "https://t.me/tgmShareAI", icon: Send },
+  { label: "微信群", href: "https://qr.869hr.uk/aitech", icon: MessageCircle },
 ];
 
 export default function LandingHeader() {
