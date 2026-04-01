@@ -13,7 +13,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
-          storageKey="magic-resume-theme"
+          storageKey="daba-resume-theme"
         >
           {children}
         </ThemeProvider>
