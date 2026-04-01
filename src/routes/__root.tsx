@@ -23,7 +23,7 @@ export const Route = createRootRoute({
         name: "viewport",
         content: "width=device-width, initial-scale=1"
       },
-      { title: "Magic Resume" }
+      { title: "大坝简历" }
     ],
     links: [
       {

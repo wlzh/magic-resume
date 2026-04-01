@@ -41,7 +41,7 @@ export const Route = createFileRoute("/$locale")({
         { name: "description", content: seo.description },
         { name: "robots", content: "index,follow" },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Magic Resume" },
+        { property: "og:site_name", content: "大坝简历" },
         { property: "og:title", content: seo.title },
         { property: "og:description", content: seo.description },
         { property: "og:locale", content: seo.localeTag },

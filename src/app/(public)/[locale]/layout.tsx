@@ -27,7 +27,7 @@ export async function generateMetadata({
   const baseUrl = "https://jianli.869hr.uk";
 
   const keywords = locale === "zh"
-    ? "简历制作,在线简历,免费简历模板,个人简历,求职简历,简历生成器,魔方简历,专业简历,简历设计,简历工具"
+    ? "简历制作,在线简历,免费简历模板,个人简历,求职简历,简历生成器,大坝简历,专业简历,简历设计,简历工具"
     : "resume builder,cv maker,free resume templates,professional resume,job application,resume design,magic resume,resume tool,online resume,career";
 
   return {
