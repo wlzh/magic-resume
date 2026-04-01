@@ -21,7 +21,7 @@ interface CreativeTemplateProps {
 
 const CreativeTemplate: React.FC<CreativeTemplateProps> = ({ data, template }) => {
     const { colorScheme } = template;
-    const enabledSections = data.menuSections.filter((s) => s.enabled).sort((a, b) => a.order - b.order);
+    const enabledSections = (data.menuSections || []).filter((s) => s.enabled).sort((a, b) => a.order - b.order);
 
     const basicSection = enabledSections.find((s) => s.id === "basic");
     const otherSections = enabledSections.filter((s) => s.id !== "basic");

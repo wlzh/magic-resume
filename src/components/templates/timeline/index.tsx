@@ -20,7 +20,7 @@ interface TimelineTemplateProps {
 
 const TimelineTemplate: React.FC<TimelineTemplateProps> = ({ data, template }) => {
     const { colorScheme } = template;
-    const enabledSections = data.menuSections.filter((s) => s.enabled).sort((a, b) => a.order - b.order);
+    const enabledSections = (data.menuSections || []).filter((s) => s.enabled).sort((a, b) => a.order - b.order);
 
     const renderTimelineItem = (content: React.ReactNode, title: string) => (
         <div className="relative pl-6">

@@ -20,7 +20,7 @@ interface ElegantTemplateProps {
 
 const ElegantTemplate: React.FC<ElegantTemplateProps> = ({ data, template }) => {
     const { colorScheme } = template;
-    const enabledSections = data.menuSections.filter((s) => s.enabled).sort((a, b) => a.order - b.order);
+    const enabledSections = (data.menuSections || []).filter((s) => s.enabled).sort((a, b) => a.order - b.order);
 
     const renderSection = (sectionId: string) => {
         switch (sectionId) {
