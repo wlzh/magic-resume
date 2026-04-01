@@ -50,7 +50,8 @@ export const Route = createFileRoute("/$locale")({
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: seo.title },
         { name: "twitter:description", content: seo.description },
-        { name: "twitter:image", content: `${SEO_BASE_URL}/web-shot.png` }
+        { name: "twitter:image", content: `${SEO_BASE_URL}/web-shot.png` },
+        { name: "google-adsense-account", content: "ca-pub-2634092855285462" }
       ],
       links: [
         { rel: "canonical", href: seo.canonical },
