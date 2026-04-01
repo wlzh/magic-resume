@@ -15,7 +15,7 @@ export default function LandingPage() {
       <FeaturesSection />
       <FAQSection />
       <CTASection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
