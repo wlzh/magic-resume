@@ -15,7 +15,7 @@ export default function Document({ children, locale, bodyClassName }: Props) {
   return (
     <html className={inter.className} lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" href="/favicon.ico?v=3" />
         <meta name="keywords" content="简历制作,在线简历,免费简历模板,个人简历,求职简历,resume builder,cv maker,free resume templates" />
         <script
           async

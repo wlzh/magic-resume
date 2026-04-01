@@ -55,8 +55,8 @@ function RootComponent() {
     <html lang={locale} suppressHydrationWarning>
       <head>
         <HeadContent />
-        <link rel="icon" href="/favicon.ico?v=2" />
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/favicon.ico?v=3" />
+        <link rel="icon" href="/icon.png?v=3" />
       </head>
       <body>
         <NextIntlClientProvider
