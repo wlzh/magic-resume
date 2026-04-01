@@ -109,14 +109,14 @@ export const ResumeCardItem = ({
                                 {resume.title || t("dashboard.resumes.untitled")}
                             </span>
                             <span className="text-[11px] text-gray-600 dark:text-gray-300 mt-0.5 font-medium">
-                                {t(`dashboard.templates.${templateNameKey}.name`)} · {new Intl.DateTimeFormat(locale, {
+                                {t(`dashboard.templates.${templateNameKey}.name`)}{resume.createdAt && !isNaN(new Date(resume.createdAt).getTime()) ? ` · ${new Intl.DateTimeFormat(locale, {
                                     year: 'numeric',
                                     month: 'short',
                                     day: 'numeric',
                                     hour: '2-digit',
                                     minute: '2-digit',
                                     hour12: false
-                                }).format(new Date(resume.createdAt))}
+                                }).format(new Date(resume.createdAt))}` : ""}
                             </span>
                         </div>
                     </div>
