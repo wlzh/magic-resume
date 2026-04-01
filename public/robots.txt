@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://magicv.art/sitemap.xml
+Sitemap: https://jianli.869hr.uk/sitemap.xml

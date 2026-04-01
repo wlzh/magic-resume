@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://magicv.art"),
+  metadataBase: new URL("https://jianli.869hr.uk"),
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",

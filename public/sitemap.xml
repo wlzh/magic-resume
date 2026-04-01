@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://magicv.art/zh</loc>
+    <loc>https://jianli.869hr.uk/zh</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://magicv.art/zh" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://magicv.art/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://magicv.art/zh" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://jianli.869hr.uk/zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jianli.869hr.uk/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jianli.869hr.uk/zh" />
   </url>
   <url>
-    <loc>https://magicv.art/en</loc>
+    <loc>https://jianli.869hr.uk/en</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magicv.art/en" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://magicv.art/zh" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://magicv.art/zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jianli.869hr.uk/en" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://jianli.869hr.uk/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jianli.869hr.uk/zh" />
   </url>
 </urlset>

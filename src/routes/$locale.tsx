@@ -4,7 +4,7 @@ import { defaultLocale, locales, type Locale } from "@/i18n/config";
 import zhMessages from "@/i18n/locales/zh.json";
 import enMessages from "@/i18n/locales/en.json";
 
-const SEO_BASE_URL = "https://magicv.art";
+const SEO_BASE_URL = "https://jianli.869hr.uk";
 
 function resolveLocale(rawLocale: string): Locale {
   if (locales.includes(rawLocale as Locale)) {

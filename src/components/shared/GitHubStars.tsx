@@ -3,8 +3,8 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const REPO_URL = "https://github.com/JOYCEQL/magic-resume";
-const API_URL = "https://api.github.com/repos/JOYCEQL/magic-resume";
+const REPO_URL = "https://github.com/wlzh/magic-resume";
+const API_URL = "https://api.github.com/repos/wlzh/magic-resume";
 
 export function GitHubStars() {
   const [stars, setStars] = useState<number | null>(null);
@@ -33,7 +33,8 @@ export function GitHubStars() {
         "hover:border-border/80 dark:hover:border-white/40",
         "shadow-sm hover:shadow-md",
         "cursor-pointer select-none",
-        "group overflow-hidden"
+        "group overflow-hidden",
+        "hidden"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
