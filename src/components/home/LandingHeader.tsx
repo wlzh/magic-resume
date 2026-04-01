@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { usePathname } from "@/lib/navigation";
 import { useTranslations } from "@/i18n/compat/client";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, Moon, Sun, X, Youtube, Twitter, Globe, BookOpen, Send } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/shared/Logo";
@@ -12,6 +12,14 @@ import { GitHubStars } from "@/components/shared/GitHubStars";
 import ScrollHeader from "./client/ScrollHeader";
 import MobileMenu from "./client/MobileMenu";
 import GoDashboard from "./GoDashboard";
+
+const SOCIAL_LINKS = [
+  { label: "YouTube", href: "https://youtube.com/@gxjdian", icon: Youtube },
+  { label: "X (Twitter)", href: "https://x.com/gxjdian", icon: Twitter },
+  { label: "博客", href: "https://869hr.uk", icon: Globe },
+  { label: "大坝资源站", href: "https://doc.869hr.uk", icon: BookOpen },
+  { label: "Telegram", href: "https://t.me/tgmShareAI", icon: Send },
+];
 
 export default function LandingHeader() {
   const t = useTranslations("home");
@@ -42,6 +50,19 @@ export default function LandingHeader() {
                   <Moon className="h-[1.1rem] w-[1.1rem] absolute inset-0 m-auto rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                 </div>
               </ThemeToggle>
+              <div className="flex items-center gap-1">
+                {SOCIAL_LINKS.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 flex items-center justify-center rounded-xl hover:bg-accent/80 text-muted-foreground/70 hover:text-foreground/80 transition-colors"
+                  >
+                    <link.icon className="h-[1.1rem] w-[1.1rem]" />
+                  </a>
+                ))}
+              </div>
               <GitHubStars />
 
               <GoDashboard>
