@@ -93,6 +93,7 @@ export default function LandingHeader() {
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
         buttonText={t("header.startButton")}
+        socialLinks={SOCIAL_LINKS}
       />
     </>
   );

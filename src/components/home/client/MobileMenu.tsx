@@ -8,10 +8,17 @@ import ThemeToggle from "@/components/shared/ThemeToggle";
 import LanguageSwitch from "@/components/shared/LanguageSwitch";
 import { GitHubStars } from "@/components/shared/GitHubStars";
 
+interface SocialLink {
+  label: string;
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
   buttonText: string;
+  socialLinks?: SocialLink[];
   extraItems?: Array<{
     icon: React.ReactNode;
     label: string;
@@ -23,6 +30,7 @@ export default function MobileMenu({
   isOpen,
   onClose,
   buttonText,
+  socialLinks = [],
   extraItems = [],
 }: MobileMenuProps) {
   const t = useTranslations("home");
@@ -50,6 +58,22 @@ export default function MobileMenu({
             <GitHubStars />
           </div>
 
+          {socialLinks.length > 0 && (
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground/70 hover:text-foreground/80 hover:bg-accent/50 transition-colors"
+                >
+                  <link.icon className="h-4 w-4" />
+                  <span>{link.label}</span>
+                </a>
+              ))}
+            </div>
+          )}
 
           {extraItems && extraItems.length > 0 && (
             <div className="flex flex-col items-center justify-center gap-2">
